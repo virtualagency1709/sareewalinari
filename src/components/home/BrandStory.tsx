@@ -32,12 +32,13 @@ export default function BrandStory() {
 
             {/* Overlapping Secondary Card with Logo */}
             <div className="hidden sm:flex absolute -bottom-8 -right-8 w-48 h-48 rounded-2xl bg-white p-4 shadow-xl border border-[#D9A0AD]/30 flex-col items-center justify-center text-center">
-              <div className="relative w-16 h-16 rounded-full overflow-hidden mb-2">
+              <div className="relative w-16 h-16 max-w-[64px] max-h-[64px] rounded-full overflow-hidden mb-2 bg-[#FFF9F7] border border-[#D9A0AD]/40">
                 <Image
                   src="/images/logo.png"
                   alt="Saree Wali Nari"
-                  fill
-                  className="object-cover"
+                  width={64}
+                  height={64}
+                  className="w-full h-full object-contain object-center"
                 />
               </div>
               <span className="font-serif text-xs font-bold text-[#70152B]">

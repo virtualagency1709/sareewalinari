@@ -97,13 +97,14 @@ export default function Header() {
             {/* Brand Logo */}
             <div className="flex-shrink-0 flex items-center">
               <Link href="/" className="flex items-center gap-3 group">
-                <div className="relative w-12 h-12 md:w-14 md:h-14 rounded-full overflow-hidden border border-[#D9A0AD]/40 shadow-xs group-hover:scale-105 transition-transform duration-300">
+                <div className="relative w-12 h-12 md:w-14 md:h-14 max-w-[56px] max-h-[56px] rounded-full overflow-hidden border border-[#D9A0AD]/40 shadow-xs flex-shrink-0 bg-[#FFF9F7] group-hover:scale-105 transition-transform duration-300">
                   <Image
                     src="/images/logo.png"
                     alt="Saree Wali Nari Logo"
-                    fill
+                    width={56}
+                    height={56}
                     priority
-                    className="object-cover"
+                    className="w-full h-full object-contain object-center"
                   />
                 </div>
                 <div className="flex flex-col">

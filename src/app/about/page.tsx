@@ -14,8 +14,8 @@ export default function AboutPage() {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
         {/* Hero Banner */}
         <div className="text-center max-w-2xl mx-auto space-y-4">
-          <div className="relative w-20 h-20 rounded-full overflow-hidden mx-auto border border-[#D9A0AD]/40 shadow-xs mb-3">
-            <Image src="/images/logo.png" alt="Saree Wali Nari Logo" fill className="object-cover" />
+          <div className="relative w-20 h-20 max-w-[80px] max-h-[80px] rounded-full overflow-hidden mx-auto border border-[#D9A0AD]/40 shadow-xs mb-3 bg-[#FFF9F7]">
+            <Image src="/images/logo.png" alt="Saree Wali Nari Logo" width={80} height={80} className="w-full h-full object-contain object-center" />
           </div>
           <span className="text-xs uppercase font-bold tracking-[0.25em] text-[#8B1E3F]">
             The Atelier Chronicle

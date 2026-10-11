@@ -1,8 +1,7 @@
 import type { Metadata } from 'next';
 import { Playfair_Display, Plus_Jakarta_Sans } from 'next/font/google';
 import './globals.css';
-import Header from '@/components/layout/Header';
-import Footer from '@/components/layout/Footer';
+import StorefrontShell from '@/components/layout/StorefrontShell';
 import { CartProvider } from '@/context/CartContext';
 import { WishlistProvider } from '@/context/WishlistContext';
 import { AuthProvider } from '@/context/AuthContext';
@@ -52,9 +51,7 @@ export default function RootLayout({
         <AuthProvider>
           <WishlistProvider>
             <CartProvider>
-              <Header />
-              <main className="flex-1">{children}</main>
-              <Footer />
+              <StorefrontShell>{children}</StorefrontShell>
             </CartProvider>
           </WishlistProvider>
         </AuthProvider>

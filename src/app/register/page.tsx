@@ -44,8 +44,8 @@ export default function RegisterPage() {
     <div className="bg-[#FFF9F7] min-h-[80vh] flex items-center justify-center py-16 px-4">
       <div className="bg-white rounded-3xl p-8 sm:p-12 border border-[#D9A0AD]/30 shadow-xl max-w-md w-full space-y-6">
         <div className="text-center space-y-2">
-          <div className="relative w-16 h-16 rounded-full overflow-hidden mx-auto border border-[#D9A0AD]/40 shadow-xs">
-            <Image src="/images/logo.png" alt="Saree Wali Nari Logo" fill className="object-cover" />
+          <div className="relative w-16 h-16 max-w-[64px] max-h-[64px] rounded-full overflow-hidden mx-auto border border-[#D9A0AD]/40 shadow-xs bg-[#FFF9F7]">
+            <Image src="/images/logo.png" alt="Saree Wali Nari Logo" width={64} height={64} className="w-full h-full object-contain object-center" />
           </div>
           <h1 className="font-serif text-2xl sm:text-3xl font-bold text-[#171316]">
             Create an Account

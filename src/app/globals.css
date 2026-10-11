@@ -1,33 +1,84 @@
 @import "tailwindcss";
 
-@layer base {
-  :root {
-    --brand-blush: #FBE9EE;
-    --brand-ivory: #FFF9F7;
-    --brand-crimson: #8B1E3F;
-    --brand-crimson-light: #A51D36;
-    --brand-burgundy: #70152B;
-    --brand-charcoal: #171316;
-    --brand-rose: #D9A0AD;
-    --brand-gold: #D4AF37;
-    --brand-gold-light: #F3E5AB;
-    --brand-sand: #F5EBE6;
-  }
+@theme {
+  --color-brand-blush: #FBE9EE;
+  --color-brand-ivory: #FFF9F7;
+  --color-brand-crimson: #8B1E3F;
+  --color-brand-crimson-light: #A51D36;
+  --color-brand-burgundy: #70152B;
+  --color-brand-charcoal: #171316;
+  --color-brand-rose: #D9A0AD;
+  --color-brand-gold: #D4AF37;
+  --color-brand-gold-light: #F3E5AB;
+  --color-brand-sand: #F5EBE6;
 
-  body {
-    background-color: var(--brand-ivory);
-    color: var(--brand-charcoal);
-    font-family: var(--font-body), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    overflow-x: hidden;
-  }
-
-  h1, h2, h3, h4, h5, h6, .font-serif {
-    font-family: var(--font-heading), Georgia, serif;
-    letter-spacing: -0.01em;
-  }
+  --font-serif: var(--font-heading), Georgia, serif;
+  --font-sans: var(--font-body), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
-/* Custom scrollbar for luxury feel */
+:root {
+  --brand-blush: #FBE9EE;
+  --brand-ivory: #FFF9F7;
+  --brand-crimson: #8B1E3F;
+  --brand-crimson-light: #A51D36;
+  --brand-burgundy: #70152B;
+  --brand-charcoal: #171316;
+  --brand-rose: #D9A0AD;
+  --brand-gold: #D4AF37;
+  --brand-gold-light: #F3E5AB;
+  --brand-sand: #F5EBE6;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: #FFF9F7;
+  color: #171316;
+  font-family: var(--font-body), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6, .font-serif {
+  font-family: var(--font-heading), Georgia, serif;
+  letter-spacing: -0.01em;
+}
+
+/* Prevent unstyled blue links */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Accessible focus states */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid #8B1E3F;
+  outline-offset: 2px;
+}
+
+/* Image constraints */
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;

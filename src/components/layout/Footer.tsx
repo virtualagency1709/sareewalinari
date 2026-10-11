@@ -60,12 +60,13 @@ export default function Footer() {
           {/* Brand Bio */}
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="relative w-12 h-12 rounded-full overflow-hidden border border-[#D9A0AD]/40 shadow-xs">
+              <div className="relative w-12 h-12 max-w-[48px] max-h-[48px] rounded-full overflow-hidden border border-[#D9A0AD]/40 shadow-xs flex-shrink-0 bg-white/5">
                 <Image
                   src="/images/logo.png"
                   alt="Saree Wali Nari Logo"
-                  fill
-                  className="object-cover"
+                  width={48}
+                  height={48}
+                  className="w-full h-full object-contain object-center"
                 />
               </div>
               <div>

@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --brand-blush: #FBE9EE;
+    --brand-ivory: #FFF9F7;
+    --brand-crimson: #8B1E3F;
+    --brand-crimson-light: #A51D36;
+    --brand-burgundy: #70152B;
+    --brand-charcoal: #171316;
+    --brand-rose: #D9A0AD;
+    --brand-gold: #D4AF37;
+    --brand-gold-light: #F3E5AB;
+    --brand-sand: #F5EBE6;
+  }
+
+  body {
+    background-color: var(--brand-ivory);
+    color: var(--brand-charcoal);
+    font-family: var(--font-body), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-serif {
+    font-family: var(--font-heading), Georgia, serif;
+    letter-spacing: -0.01em;
+  }
+}
+
+/* Custom scrollbar for luxury feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FFF9F7;
+}
+::-webkit-scrollbar-thumb {
+  background: #D9A0AD;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8B1E3F;
+}
+
+/* Subtle gold shimmer text utility */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #A51D36 0%, #D4AF37 50%, #70152B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-pattern-subtle {
+  background-image: radial-gradient(#d9a0ad40 1px, transparent 1px);
+  background-size: 24px 24px;
+}
